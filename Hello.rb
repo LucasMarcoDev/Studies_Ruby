@@ -6,3 +6,4 @@ idade = gets.chomp.to_i
 puts "A idade de #{nome} é #{idade}"
 
 
+puts" new again "
