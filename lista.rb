@@ -1,7 +1,10 @@
-vetor = []
-vetor.push("Lucas", "Renata", "Valéria", "Rodrigo")
-vetor << "Luenan"
-vetor.delete("Valéria")
-vetor.insert(0, "Ciclano")
-vetor.insert(4, "Rodolfo")
-puts vetor
+array = []
+array.push("Zuleica","Renata", "Mirian", "Washington", "Diego")
+array.delete("Diego")
+array << "Lucas"
+array.insert(0, "Luenan")
+
+puts array.first
+puts array.last
+puts array.sort
+puts array.length
