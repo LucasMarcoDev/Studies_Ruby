@@ -1,14 +1,29 @@
-class Aluno
-  @nome
-  @idade
+class Boneco
+ @poder
+ @sexo
 
-  def mudar_nome(nome)
-    @nome = nome
-  end
-  def mostra_nome
-    @nome
-  end
-  end
+ def troca_poder (poder)
+  @poder = poder
+ end
 
-  a1 = Aluno.new
-  puts a1.mudar_nome("lucas")
+ def mostra_poder
+  @poder
+end
+
+ def troca_sexo (sexo)
+  @sexo = sexo
+ end
+
+ def mostra_sexo
+  @sexo
+
+end
+end
+
+toy = Boneco.new
+
+toy.troca_poder("Masculino")
+toy.troca_sexo("Voar")
+
+puts toy.mostra_poder
+puts toy.mostra_sexo
