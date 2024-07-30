@@ -13,16 +13,16 @@ end
 
   class Funcionario < Material
   attr_reader :nome, :idade
-    def initialize (tipo, funcao, nome, idade)
-      super(tipo)
-      super(funcao)
+    def initialize (nome, idade, tipo, funcao)
+      super(tipo,funcao)
+
       @nome = nome
      @idade = idade
 
 
     end
       def exibe_info
-        puts "O funcionário #{@nome} , tem #{@idade} , trabalho como #{@tipo}, na area de #{@funcao}"
+        puts "O funcionário #{@nome} , tem #{@idade} anos , trabalha como #{@tipo}, na area de #{@funcao}"
 
       end
 end
