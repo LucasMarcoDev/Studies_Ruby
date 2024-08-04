@@ -3,12 +3,12 @@ class Subt
   def initialize(numero1,numero2)
     @n1 = numero1
     @n2 = numero2
-    show = @n1 - @n2
-    puts show
   end
-
-
+    def visu
+      show = @n1 - @n2
+      puts show
+    end
 end
 
 mostra = Subt.new(10, 8)
-puts mostra
+puts mostra.visu
